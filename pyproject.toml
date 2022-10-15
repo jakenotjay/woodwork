@@ -10,7 +10,7 @@ authors = [
 ]
 description = "Package containing core functionality to producing segmentation of forest loss."
 requires-python = ">=3.7"
-dependencies=["google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib"]
+dependencies=["google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib", "earthengine-api"]
 classifiers = [
    "Programming Language :: Python :: 3",
    "Operating System :: OS Independent",

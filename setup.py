@@ -8,7 +8,7 @@ setup(name='woodwork',
       author='Jake Wilkins',
       author_email='jwilkins0519@gmail.com',
       url='',
-      install_requires=["google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib"],
+      install_requires=["google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib", "earthengine-api"],
       packages=find_packages(include=["woodwork", "woodwork.*"]),
       package_data={"woodwork": ["data/*.json"]},
       classifiers=[

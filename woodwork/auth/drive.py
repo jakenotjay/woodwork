@@ -28,7 +28,7 @@ def authenticate_drive():
         else:
             # creds folder from env or if it doesn't exist './'
             creds_folder = getenv('PERSONAL_KEYS', './')
-            creds_file = path.join(creds_folder, 'drive_credentials.json')
+            creds_file = path.join(creds_folder, 'credentials.json')
 
             flow = InstalledAppFlow.from_client_secrets_file(creds_file, SCOPES)
             creds = flow.run_local_server(port=0)
