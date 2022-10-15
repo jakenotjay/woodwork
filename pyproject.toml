@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "woodwork"
+version = "0.0.1"
+authors = [
+    { name="Jake Wilkins", email="jwilkins0519@gmail.com" },
+]
+description = "Package containing core functionality to producing segmentation of forest loss."
+requires-python = ">=3.7"
+dependencies=["google-api-python-client", "google-auth-httplib2", "google-auth-oauthlib"]
+classifiers = [
+   "Programming Language :: Python :: 3",
+   "Operating System :: OS Independent",
+   "Topic :: Scientific/Engineering",
+   "Topic :: Scientific/Engineering :: GIS",
+   "Development Status :: 2 - Pre-Alpha"
+]
+
+[tool.setuptools.packages]
+find = {}
