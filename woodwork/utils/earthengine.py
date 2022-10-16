@@ -68,7 +68,7 @@ def generate_difference_image(before_image: ee.Image, after_image: ee.Image, han
 
     return diff
 
-def export_diff_image(diff_image: ee.Image, year: int, region: ee.Geometry, scale: int, crs: str, output_path: str):
+def export_diff_image(diff_image: ee.Image, year: int, region: ee.Geometry, scale: int, crs: str, output_path: str) -> ee.batch.Task:
     """Export a difference image to Google Drive.
 
     Args:
