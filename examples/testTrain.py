@@ -1,4 +1,4 @@
-from woodwork import utils
+from ..woodwork import utils
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
 pprint = pp.pprint

@@ -1,2 +1,2 @@
 from .drive import Drive
-from .ee import EarthEngine
+from . import earthengine

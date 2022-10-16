@@ -1,2 +1,2 @@
 from .drive import authenticate_drive
-from .ee import authenticate_ee
+from .earthengine import authenticate_ee

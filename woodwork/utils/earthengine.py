@@ -1,6 +1,6 @@
 from typing import Tuple, List
 import ee
-from ..auth.ee import authenticate_ee
+from ..auth.earthengine import authenticate_ee
 
 if ee.data._credentials is None:
     authenticate_ee()
