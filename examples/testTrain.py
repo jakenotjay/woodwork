@@ -1,3 +1,4 @@
+"""An example of splitting exported images into training and test folders"""
 from ..woodwork import utils
 import pprint
 pp = pprint.PrettyPrinter(indent=4)
