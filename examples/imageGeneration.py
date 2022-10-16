@@ -35,4 +35,7 @@ hansen_19 = ee_utils.get_hansen_image_from_year(2019)
 
 diff = ee_utils.generate_difference_image(s2_18.median(), s2_20.median(), hansen_19, ['B4', 'B3', 'B2'])
 
-ee_utils.export_diff_image(diff, 2019, AOI, 10, 'EPSG:4326', 'examples/diff_image.tif')
+task = ee_utils.export_diff_image(diff, 2019, AOI, 10, 'EPSG:4326', 'exampleHansenOutputs')
+
+print(task.active())
+print("task status is: ", task.status())

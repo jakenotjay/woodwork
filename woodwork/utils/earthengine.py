@@ -87,5 +87,10 @@ def export_diff_image(diff_image: ee.Image, year: int, region: ee.Geometry, scal
         scale=scale,
         crs=crs,
         maxPixels=1e13,
+        skipEmptyTiles=True,
+        fileFormat="GeoTIFF",
+        fileDimensions=512
     )
     task.start()
+
+    return task
